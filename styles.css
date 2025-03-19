@@ -1,0 +1,174 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'GT-Alpina';
+    src: url("fonts/GT-Alpina-Typewriter-Regular-Trial.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face{
+    font-family: "GT-Alpina";
+    src: url("fonts/GT-Alpina-Typewriter-Regular-Italic-Trial") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Prevents unwanted scrolling */
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+h4{
+    font-family:'GT-Alpina';
+    text-transform: uppercase;
+}
+
+/* Left-side sections */
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 66vw;
+    height: 100vh;
+}
+
+.section {
+    width: 100%;
+    height: 50vh; /* Each takes half of the left side */
+    background: #ccc;
+    display: flex;
+    align-items: center;
+}
+
+/* Right-side section */
+.right {
+    width: 34vw;
+    height: 100vh;
+    background: #000; /* Adjust background as needed */
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(20px 0px 25px #000);
+    border-left:1px solid white;
+}
+
+/* Scrollable content container */
+.content {
+    display: flex;
+    width: 200vw; /* Adjust this based on the number of panels */
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    height:50vh;
+    padding:5vh;
+    column-gap:5vh;
+}
+
+.right-content {
+    display:flex;
+    width:100vw;
+    overflow-x:auto;
+    white-space:nowrap;
+    scroll-behavior:smooth;
+    height:100vh;
+    padding:5vh;
+    column-gap:5vh;
+}
+
+/* Panels inside sections */
+
+.top-panel {
+    width: 90%; /* Ensures each panel is full viewport width */
+    height: 100%;
+    background: white;
+    flex-shrink: 0;
+    color:black;
+    border:1px solid black;
+    border-radius:15px;
+    margin:auto;
+}
+
+.bottom-panel{
+    display:inline;
+    flex-shrink: 0;
+}
+
+.right-panel{
+    width:100%;
+    height:100%;
+    background:pink;
+    flex-shrink:0;
+}
+
+.zine-image{
+    height:100%;
+    margin-right:50px;
+}
+
+.question-answer{
+    padding:15px;
+}
+
+
+/* Section Colors */
+.section:nth-child(1) { 
+    background: #D2D2D2; 
+}
+.section:nth-child(2) { 
+    background: black; 
+}
+.section:nth-child(3) { 
+    background: white; 
+}
+
+/* Panel Colors */
+.section:nth-child(1) .panel { 
+    background: black; 
+}
+.section:nth-child(2) .panel { 
+    background: grey; 
+}
+.section:nth-child(3) .panel { 
+    background: white; 
+}
+
+/* SCROLLBARS */
+
+/* width */
+::-webkit-scrollbar {
+    height:7px;  
+    scroll-padding: 10px;;
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.25);
+}
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    display:block;
+    background: #f1f1f1; 
+    border-radius:15px;
+    /* min-width: 50px;
+    max-width: 50px;
+    height: 7px; */
+  }
+  
+  /* Handle on hover
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.25);
+  } */
