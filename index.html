@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinner Party</title>
+    <title>What is Community?</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <script src="scroll-scrub-video-component.bundle.js"></script> -->
+    <script src="https://unpkg.com/@chrishow/scroll-scrub-video-component@latest/dist/scroll-scrub-video-component.bundle.js"></script>
     <script src="scripts.js" defer></script>
 </head>
 <body>
@@ -12,7 +14,7 @@
         <!-- Left side (Two stacked sections) -->
         <div class="left">
             <div class="section">
-                <div class="content">
+                <div class="content" id="top-content">
                     <div class="top-panel">
                         <div class="question-answer">
                             <h4>What does community mean to you? 
@@ -27,8 +29,13 @@
                     </div>
                 </div>
             </div>
+
+            <div class="custom-scrollbar">
+                <div class="scroll-thumb"></div>
+            </div>
+
             <div class="section">
-                <div class="content">
+                <div class="content" id="bottom-content">
                     <div class="bottom-panel">
                         <img class ="zine-image" src="images/zines/zine_Andrea_01.png"/>
                         <img class ="zine-image" src="images/zines/zine_Andrea_02.png"/>
@@ -51,7 +58,42 @@
         <div class="right">
             <div class="right-content">
                 <div class="right-panel">
-                    <p style="color: white; font-size: 24px;">Right box</p>
+                    <div class="video">
+                        <iframe src="https://player.vimeo.com/video/1064777510?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DinnerParty"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+                        <!-- TRYING THEA'S GIF THING -->
+
+                        <!-- <iframe
+                            id="vimeoPlayer"
+                            src="https://player.vimeo.com/video/1064777510?background=1&autoplay=1&loop=1&muted=1"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                            title="DinnerParty">
+                        </iframe>
+
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+
+                        <script>
+                            const iframe = document.getElementById("vimeoPlayer");
+                            const player = new Vimeo.Player(iframe);
+
+                            function stepFrames() {
+                                player.getCurrentTime().then(time => {
+                                    player.setCurrentTime(time + 0.05); // Adjust for faster/slower effect
+                                });
+                            }
+
+                            setInterval(stepFrames, 50); // Adjust timing for speed
+                        </script> -->
+
+                        <!-- TRYING THE SCRUB THING -->
+
+                        <!-- <scroll-scrub-video>
+                            <iframe src="https://player.vimeo.com/video/1064777510?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="DinnerParty"></iframe>
+                        </scroll-scrub-video> -->
+                    </div>
                 </div>
                 <div class="panel"></div>
             </div>
