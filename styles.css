@@ -20,17 +20,12 @@
     box-sizing: border-box;
 }
 
-body, html {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden; /* Prevents unwanted scrolling */
-    display: flex;
-}
 
 .container {
     display: flex;
-    width: 100vw;
+    width: 66vw;
     height: 100vh;
+    position:fixed;
 }
 
 h4{
@@ -59,8 +54,7 @@ h4{
     width: 34vw;
     height: 100vh;
     background: #000; /* Adjust background as needed */
-    display: flex;
-    align-items: center;
+    float:right;
     filter: drop-shadow(20px 0px 25px #000);
     border-left:1px solid white;
 }

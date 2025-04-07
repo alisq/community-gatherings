@@ -55,49 +55,15 @@
         </div>
 
         <!-- Right side (Single full-height section) -->
-        <div class="right">
-            <div class="right-content">
-                <div class="right-panel">
-                    <div class="video">
-                        <iframe src="https://player.vimeo.com/video/1064777510?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DinnerParty"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
-
-
-                        <!-- TRYING THEA'S GIF THING -->
-
-                        <!-- <iframe
-                            id="vimeoPlayer"
-                            src="https://player.vimeo.com/video/1064777510?background=1&autoplay=1&loop=1&muted=1"
-                            frameborder="0"
-                            allow="autoplay; fullscreen; picture-in-picture"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                            title="DinnerParty">
-                        </iframe>
-
-                        <script src="https://player.vimeo.com/api/player.js"></script>
-
-                        <script>
-                            const iframe = document.getElementById("vimeoPlayer");
-                            const player = new Vimeo.Player(iframe);
-
-                            function stepFrames() {
-                                player.getCurrentTime().then(time => {
-                                    player.setCurrentTime(time + 0.05); // Adjust for faster/slower effect
-                                });
-                            }
-
-                            setInterval(stepFrames, 50); // Adjust timing for speed
-                        </script> -->
-
-                        <!-- TRYING THE SCRUB THING -->
-
-                        <!-- <scroll-scrub-video>
-                            <iframe src="https://player.vimeo.com/video/1064777510?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="DinnerParty"></iframe>
-                        </scroll-scrub-video> -->
-                    </div>
-                </div>
-                <div class="panel"></div>
-            </div>
+       
         </div>
     </div>
+
+    <div class="right">
+ 
+        <scroll-scrub-video src="./images/DinnerParty-lowres.mov"></scroll-scrub-video>
+
+
+</div>
 </body>
 </html>

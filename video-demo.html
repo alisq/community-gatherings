@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/@chrishow/scroll-scrub-video-component@latest/dist/scroll-scrub-video-component.bundle.js"></script>
+        <link rel="stylesheet" href="">
+        <style>
+             scrub-video {
+  display: block;
+  height: 100vh;
+}
+
+
+
+
+
+
+            </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <scroll-scrub-video src="./images/DinnerParty-lowres.mov"></scroll-scrub-video>
+        
+        <script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const shadowHost = document.querySelector('#my-component');
+    if (shadowHost && shadowHost.shadowRoot) {
+      const videos = shadowHost.shadowRoot.querySelectorAll('video');
+      videos.forEach(video => {
+        video.style.width = 'auto';
+      });
+    }
+  }, 5000);
+});
+        </script>
+    </body>
+</html>
